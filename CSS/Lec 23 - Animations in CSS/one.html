@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Document</title>
+		<style>
+			* {
+				margin: 0;
+				padding: 0;
+				box-sizing: border-box;
+			}
+			.container {
+				width: 100vw;
+				height: 100vh;
+				overflow: hidden;
+				display: flex;
+				flex-direction: row;
+				background-color: beige;
+			}
+
+			#leftside {
+				width: 50%;
+				height: 100vh;
+				background-color: blanchedalmond;
+				display: flex;
+				flex-direction: column;
+				justify-content: center;
+				align-items: center;
+			}
+
+			#rightside {
+				width: 50%;
+				height: 100vh;
+				background-color: aquamarine;
+				display: flex;
+				flex-direction: column;
+				justify-content: center;
+				align-items: center;
+			}
+
+			#name {
+				font-family: cursive;
+				font-size: 350%;
+				font-weight: bolder;
+				font-style: oblique;
+				font-variant: small-caps;
+				color: red;
+				text-align: start;
+				text-shadow: blue 3px 3px 2px;
+				transition: all 5s linear;
+			}
+			#name:hover {
+				/* font-size: 450%; */
+				transform: scale(1.5) skew(30deg);
+				/* transform: skew(45deg); */
+			}
+			#logo {
+				position: relative;
+				/* top: 10%; */
+				animation: logoBounce 2s linear 0s infinite alternate none;
+				transition: all 3s ease-in;
+			}
+			#logo:hover {
+				transform: scale(2) skewX(20deg) rotate(360deg);
+			}
+			@keyframes logoBounce {
+				from {
+					top: 1%;
+				}
+				to {
+					top: -4%;
+				}
+			}
+
+			#role {
+				transition: all 5s linear 0s;
+			}
+
+			#role:hover {
+				/* transform: matrix(1, -0.3, 0, 1, 0, 0); */
+			}
+		</style>
+	</head>
+	<body>
+		<div class="container">
+			<div id="leftside">
+				<h2 id="name">Asher Fraz Anjum</h2>
+				<br />
+				<h3 id="role">Software Engineer</h3>
+				<br />
+				<p id="description">
+					I'm freash graduated software engineer from Pakistan University.
+				</p>
+			</div>
+			<div id="rightside">
+				<img src="./0 (1).png" alt="image 1 " width="250" id="logo" />
+			</div>
+		</div>
+	</body>
+</html>

@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Animations in CSS</title>
+	</head>
+	<style>
+		* {
+			margin: 0;
+			padding: 0;
+			box-sizing: border-box;
+		}
+		.container {
+			width: 100vw;
+			height: 100vh;
+			background-color: beige;
+			border: 5px solid black;
+			overflow: hidden;
+		}
+		#topBox {
+			width: 350px;
+			height: 80px;
+			background-color: blue;
+			margin: 10px;
+			border-radius: 10px;
+			border: 2px solid black;
+			position: relative;
+
+			animation: 5s linear 1s infinite alternate none running topBox;
+		}
+
+		@keyframes topBox {
+			from {
+				top: 0;
+				left: 0;
+			}
+			to {
+				top: 0;
+				left: 75%;
+			}
+		}
+
+		#circleBall {
+			width: 100px;
+			height: 100px;
+			background-color: brown;
+			margin: 10px;
+			border-radius: 50%;
+			border: 2px solid black;
+			position: relative;
+			top: 30%;
+			left: 40%;
+			animation: 10s cubic-bezier(0.075, 0.82, 0.165, 1) 0s infinite
+				alternate-reverse none running circleBall;
+		}
+
+		@keyframes circleBall {
+			/* Asher Keyframes */
+			0% {
+				top: 0;
+				left: 0;
+			}
+			30% {
+				top: 30%;
+				left: 95%;
+			}
+			60% {
+				top: 60%;
+				left: 0;
+			}
+			100% {
+				top: 75%;
+				left: 20%;
+			}
+
+			/* codehelp keyframes */
+
+			/* 0% {
+				top: 1%;
+				left: 5%;
+			}
+			30% {
+				top: 5%;
+				left: 95%;
+			}
+
+			60% {
+				top: 70%;
+				left: 10%;
+			}
+			100% {
+				top: 75%;
+				left: 90%;
+			} */
+		}
+
+		#bottomBox {
+			width: 350px;
+			height: 80px;
+			background-color: blue;
+			margin: 10px;
+			border-radius: 10px;
+			border: 2px solid black;
+			position: relative;
+
+			animation: 3s linear 1s infinite alternate-reverse none running bottomBox;
+		}
+
+		@keyframes bottomBox {
+			from {
+				top: 75%;
+				left: 0%;
+			}
+			to {
+				top: 75%;
+				left: 75%;
+			}
+		}
+	</style>
+	<body>
+		<div class="container">
+			<div id="topBox"></div>
+			<div id="circleBall"></div>
+			<div id="bottomBox"></div>
+		</div>
+	</body>
+</html>

@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<meta>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Second Card Project</title>
+<meta name="author" content="asherfraz" />
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    .container {
+        width: 100vw;
+        height: 100vh;
+        background: rgb(194, 207, 211);
+        background: linear-gradient(90deg, rgba(194, 207, 211, 1) 0%, rgba(175, 210, 204, 1) 0%);
+
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+
+    }
+
+    .card {
+        width: 400px;
+        height: 600px;
+        margin: 5px;
+        padding-bottom: 20px;
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 25px;
+
+        border-radius: 20px;
+        background-color: white;
+    }
+
+    .card>img {
+        height: 40%;
+        width: 100%;
+        border-top-left-radius: 20px;
+        border-top-right-radius: 20px;
+    }
+
+    #introText {
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 75%;
+        gap: 15px;
+    }
+
+    #paymentButton {
+        width: 75%;
+        height: 9%;
+        border-radius: 10px;
+        color: white;
+        background-color: #05104b;
+        box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+    }
+
+    #cancelButton>a {
+        text-decoration: none;
+        color: black;
+        font-size: 1.1rem;
+        font-weight: 600;
+    }
+
+    #ammountBox {
+        width: 80%;
+        height: 10%;
+        background-color: #cde1e8;
+        border-radius: 10px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        padding-left: 20px;
+        padding-right: 20px;
+
+    }
+
+    #leftBox {
+        height: 100%;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 15px;
+    }
+
+    #imgBox>img {
+        width: 3.5rem;
+        height: 3.5rem;
+    }
+
+    #amountText>p {
+        font-weight: 600;
+    }
+
+    @media (max-width:1080px) {
+        .card {
+            width: 400px;
+            height: 740px;
+        }
+
+        #ammountBox {
+            height: 20%;
+            flex-direction: column;
+            padding-top: 10px;
+            padding-bottom: 10px;
+        }
+
+        #leftBox {
+            height: 40%;
+            gap: 0px;
+            flex-direction: column;
+        }
+    }
+</style>
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="card">
+            <img src="./images/icon.jpg" alt="Card image">
+            <div id="introText">
+                <h2>Order Summary</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur facilis architecto excepturi
+                    omnis
+                    optio, fugit nostrum dolor laboriosam!</p>
+            </div>
+
+            <div id="ammountBox">
+                <div id="leftBox">
+                    <div id="imgBox">
+                        <img src="images/music.png" alt="Musix icon" />
+                    </div>
+                    <div id="amountText">
+                        <p>Annual Plan</p>
+                        <p>$99.9/year</p>
+                    </div>
+                </div>
+                <a href="#">Change</a>
+            </div>
+
+            <button type="button" id="paymentButton">
+                Proceed to Payment
+            </button>
+            <div id="cancelButton">
+                <a href="#">Cancel Order</a>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>

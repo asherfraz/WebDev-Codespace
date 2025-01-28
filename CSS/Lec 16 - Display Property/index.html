@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Document</title>
+		<style>
+			* {
+				margin: 0;
+				padding: 0;
+				box-sizing: border-box;
+			}
+			#box1 {
+				width: 300px;
+				height: 300px;
+				border: 1px solid salmon;
+				padding: 100px;
+				margin: 100px;
+				box-sizing: border-box;
+			}
+			#box2 {
+				width: 300px;
+				height: 300px;
+				border: 1px solid salmon;
+				padding: 100px;
+				margin: 100px;
+				box-sizing: content-box;
+			}
+		</style>
+	</head>
+
+	<body>
+		<div id="box1">This is with Border-box property.</div>
+		<br />
+		<hr />
+		<br />
+		<div id="box2">This is with Content-box property.</div>
+	</body>
+</html>

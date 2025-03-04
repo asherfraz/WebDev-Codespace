@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<meta>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>CSS 3D Tranforms</title>
+<meta name="author" content="asherfraz" />
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    body {
+        width: 100vw;
+        height: 100vh;
+        background-color: #22292f;
+        color: white;
+    }
+
+    .container {
+        height: 100%;
+        width: 80%;
+        margin: auto;
+        display: grid;
+        gap: 1rem;
+        grid-template-columns: repeat(auto-fill, minmax(250px, 250px));
+        overflow: hidden;
+    }
+
+    .item {
+        width: 250px;
+        height: 250px;
+        border: 2px solid aqua;
+        border-radius: 10px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: x-large;
+        transition: all 2s linear 0s;
+    }
+
+    #RotateX:hover {
+        transform: rotateX(45deg);
+    }
+
+    #RotateY:hover {
+        transform: rotateY(45deg);
+    }
+
+    #RotateZ:hover {
+        transform: rotateZ(45deg);
+    }
+
+    #TranslateX:hover {
+        transform: translateX(250px);
+    }
+
+    #TranslateY:hover {
+        transform: translateY(250px);
+    }
+
+    #TranslateZ:hover {
+        transform: perspective(500px) translateZ(250px);
+    }
+
+    #ScaleX:hover {
+        transform: scaleX(1.5)
+    }
+
+    #ScaleY:hover {
+        transform: scaleY(1.5)
+    }
+
+    #ScaleZ:hover {
+        transform: scaleZ(1.5)
+    }
+
+    #SkewX:hover {
+        transform: skewX(1.5)
+    }
+
+    #SkewY:hover {
+        transform: perspective(500px) skewY(1.5)
+    }
+</style>
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="item" id="RotateX">RotateX</div>
+        <div class="item" id="RotateY">RotateY</div>
+        <div class="item" id="RotateZ">RotateZ</div>
+        <div class="item" id="TranslateX">TranslateX</div>
+        <div class="item" id="TranslateY">TranslateY</div>
+        <div class="item" id="TranslateZ">TranslateZ</div>
+        <div class="item" id="ScaleX">ScaleX</div>
+        <div class="item" id="ScaleY">ScaleY</div>
+        <div class="item" id="ScaleZ">ScaleZ</div>
+        <div class="item" id="SkewX">SkewX</div>
+        <div class="item" id="SkewY">SkewY</div>
+    </div>
+
+
+</body>
+
+</html>

@@ -99,6 +99,7 @@ nav {
     background-color: #5254f8;
 }
 
+<<<<<<< HEAD
 .menu-button {
     display: block;
     border: none;
@@ -133,6 +134,14 @@ nav {
     padding: 0.6rem;
     margin: 0 auto;
     width: 100%;
+=======
+#hero {
+    max-width: 1280px;
+    padding: 0 1.5rem;
+    margin: 0 auto;
+    width: 100%;
+    height: 620px;
+>>>>>>> 3ed7e1df93493549bd506691e6b946b09f4c83d5
     display: flex;
     align-items: center;
     gap: 2rem;
@@ -142,12 +151,28 @@ nav {
     width: 50%;
     display: flex;
     flex-direction: column;
+<<<<<<< HEAD
     justify-content: center;
+=======
+    justify-content: space-evenly;
+>>>>>>> 3ed7e1df93493549bd506691e6b946b09f4c83d5
     align-items: start;
     gap: 1rem;
 
 }
 
+<<<<<<< HEAD
+=======
+.righthero {
+    width: 50%;
+    height: 100%;
+    background: url(./images/usgs-hoS3dzgpHzw-unsplash.jpg) center no-repeat;
+    background-size: cover;
+    border-radius: 20px;
+    margin: 1.5rem;
+}
+
+>>>>>>> 3ed7e1df93493549bd506691e6b946b09f4c83d5
 .hero-label {
     color: var(--primary—color);
     font-size: large;
@@ -155,11 +180,17 @@ nav {
 }
 
 .hero-title {
+<<<<<<< HEAD
     font-size: 3.7rem;
+=======
+    font-weight: bolder;
+    font-size: 3.5rem;
+>>>>>>> 3ed7e1df93493549bd506691e6b946b09f4c83d5
     text-transform: capitalize;
 }
 
 .hero-desc {
+<<<<<<< HEAD
     width: 85%;
     color: var(--gray);
     font-size: 1.13rem;
@@ -678,4 +709,8 @@ footer {
         padding-left: 5rem;
         grid-template-columns: repeat(2, 1fr);
     }
+=======
+    color: var(--gray);
+    font-size: larger;
+>>>>>>> 3ed7e1df93493549bd506691e6b946b09f4c83d5
 }

@@ -18,3 +18,4 @@ console.log("")
     console.log(b)
 }
 // console.log(b) // returns b is not defined error
+

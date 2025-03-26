@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LeetCode Metrics App </title>
+    <meta name="author" content="asherfraz" />
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            width: 100%;
+            height: 100vh
+        }
+
+        .circle {
+            width:
+                120px;
+            height:
+                120px;
+            border-radius: 50%;
+            border:
+                4px solid #299f5d;
+            position: relative;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1rem;
+            color: white;
+            font-weight: 700;
+            background: conic-gradient(#299f5d var(--progress—degree, 0%), #283a2e 0%);
+        }
+
+        .circle span {
+            position: relative;
+            z-index: 2;
+        }
+
+        .progress-item:nth-child(1)>div {
+            background: conic-gradient(#01ffff var(--progress—degree, 0%), #05999960 0%);
+        }
+
+        .progress-item:nth-child(2)>div {
+            background: conic-gradient(#ffb700 var(--progress—degree, 0%), #ffb70060 0%);
+        }
+
+        .progress-item:nth-child(3)>div {
+
+            background: conic-gradient(#f63737 var(--progress—degree, 0%), #f6373760 0%);
+        }
+    </style>
+    <script src="https://cdn.tailwindcss.com/"></script>
+</head>
+
+<body>
+
+    <div class="container ">
+        <div class="flex justify-center items-center h-screen w-screen bg-gray-900">
+
+            <div class="bg-blue-500 p-4 rounded-lg shadow-xl text-white w-fit-content">
+
+                <h1 class="inline text-3xl font-bold text-start border-b-4 border-gray-500 drop-shadow-lg ">
+                    LeetCode Metrics App</h1>
+                <div class="user-container flex flex-col items-start my-2 py-2">
+                    <p>Enter your username below:</p>
+                    <div class="flex items-center gap-4">
+                        <input type="text" id="username-input"
+                            onkeydown="if(event.keyCode==13) document.getElementById('search-btn').click()"
+                            class="text-black p-2 my-2 mr-2 border-2 border-gray-500 rounded-lg focus:outline-none focus:border-green-400"
+                            placeholder="enter username here" />
+                        <button type="button" id="search-btn"
+                            class="bg-blue-800 px-4 py-2 rounded-lg border-1 hover:bg-blue-600">Search</button>
+                    </div>
+                </div>
+
+                <div class="stats-container">
+
+                    <div class="progress-container flex flex-wrap justify-around items-center gap-4">
+                        <div class="progress-item">
+                            <div class="easy-progress circle flex-col">
+                                <p>Easy</p>
+                                <span id="easy-label"> </span>
+                            </div>
+                        </div>
+                        <div class="progress-item">
+                            <div class="medium-progress circle flex-col">
+                                <p>Medium</p>
+                                <span id="medium-label"></span>
+                            </div>
+                        </div>
+                        <div class="progress-item">
+                            <div class="hard-progress circle flex-col">
+                                <p>Hard</p>
+                                <span id="hard-label"> </span>
+                            </div>
+                        </div>
+                        <div class="progress-item">
+                            <div class="overview-progress circle flex-col">
+                                <p>Overview</p>
+                                <span id="overview-label"> </span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div
+                        class="stats-cards hidden card m-4 p-4 rounded-lg shadow-xl text-white w-fit-content bg-gray-700">
+                        <p class="inline font-bold">Username : </p>
+                        <span id="username" class="text-lg font-bold">asherfraz</span>
+                        <br>
+                        <p class="inline font-bold">Rank : </p>
+                        <span id="ranking">123</span>
+                        <br>
+                        <p class="inline font-bold">Reputation : </p>
+                        <span id="reputation">123</span>
+                        <br>
+                        <p class="inline font-bold">Acceptance : </p>
+                        <span id="acceptance-rate">123</span>
+                        <br>
+                        <p class="inline font-bold">Contribution Points : </p>
+                        <span id="contribution-points">123</span>
+
+
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+
+
+
+        <script src=" index.js">
+        </script>
+</body>
+
+</html>

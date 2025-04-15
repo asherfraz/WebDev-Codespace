@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GSAP Basics</title>
+    <meta name="author" content="asherfraz" />
+    <style>
+        * {
+            margin: 10px;
+            padding: 5px;
+            box-sizing: border-box;
+        }
+
+        body {
+            width: 100%;
+            height: 100%;
+            background-color: #222;
+            font-size: 2.5rem;
+            font-weight: bolder;
+        }
+
+        #box {
+            width: 200px;
+            height: 200px;
+            background-color: red;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        #box2 {
+            width: 200px;
+            height: 200px;
+            background-color: aqua;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        #box3 {
+            width: 200px;
+            height: 200px;
+            background-color: green;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .btn {
+            margin-top: 2rem;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #ccc;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div id="box">1</div>
+    <div id="box2">2</div>
+    <div id="box3">3</div>
+
+    <div class="btn">
+        Re-run
+    </div>
+
+
+    <!-- GSAP CDN -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.7/gsap.min.js"
+        integrity="sha512-f6bQMg6nkSRw/xfHw5BCbISe/dJjXrVGfz9BSDwhZtiErHwk7ifbmBEtF9vFW8UNIQPhV2uEFVyI/UHob9r7Cw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="index.js"></script>
+</body>
+
+</html>

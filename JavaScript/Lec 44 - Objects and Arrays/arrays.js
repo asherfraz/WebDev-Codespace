@@ -59,6 +59,8 @@ console.log("join =>", str);
 a1.reverse();
 console.log("reverse =>", a1);
 a1.reverse();
+console.log("Original Array: ", a1);
+
 
 // 8. slice() => return a portion of an array
 let a4 = a1.slice(1, 3);
